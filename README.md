@@ -104,6 +104,12 @@ files structure :
 
 #### Reset containers :
 
+    ❯ docker rm -f $(docker ps -aq) && docker rmi -f $(docker images -q)
+
+        b1f9de1944fb
+        Untagged: fletapp:latest
+        Deleted: sha256:04b55dd3acb2588f5f6f0620e8a8730c1f139d397ae197b553d3934644811084
+
 ---
 
 <p align="center">
