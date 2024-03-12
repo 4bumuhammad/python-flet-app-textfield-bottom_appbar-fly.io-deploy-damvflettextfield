@@ -194,7 +194,76 @@ check and watch for updates on the fly.io console dashboard (https://fly.io/dash
 
     ❯ flyctl deploy
 
+        ==> Verifying app config
+        Validating /Users/.../python-flet-app-textfield-bottom_appbar-fly.io-deploy-damvflettextfield/fly.toml
+        ✓ Configuration is valid
+        --> Verified app config
+        ==> Building image
+        Remote builder fly-builder-throbbing-shadow-8193 ready
+        Remote builder fly-builder-throbbing-shadow-8193 ready
+        ==> Building image with Docker
+        --> docker host: 20.10.12 linux x86_64
+        [+] Building 3.9s (10/10) FINISHED                                                                                                         
+        => [internal] load build definition from Dockerfile                                                                                  0.1s
+        => => transferring dockerfile: 202B                                                                                                  0.1s
+        => [internal] load .dockerignore                                                                                                     0.1s
+        => => transferring context: 2B                                                                                                       0.1s
+        => [internal] load metadata for docker.io/library/python:3-alpine                                                                    0.6s
+        => [internal] load build context                                                                                                     3.1s
+        => => transferring context: 500.28kB                                                                                                 3.0s
+        => [1/5] FROM docker.io/library/python:3-alpine@sha256:1a0501213b470de000d8432b3caab9d8de5489e9443c2cc7ccaa6b0aa5c3148e              0.0s
+        => CACHED [2/5] WORKDIR /app                                                                                                         0.0s
+        => CACHED [3/5] COPY requirements.txt ./                                                                                             0.0s
+        => CACHED [4/5] RUN pip install --no-cache-dir -r requirements.txt                                                                   0.0s
+        => [5/5] COPY . .                                                                                                                    0.0s
+        => exporting to image                                                                                                                0.0s
+        => => exporting layers                                                                                                               0.0s
+        => => writing image sha256:018d171f5bb29dea5a5dc4fb102817fcad88466604e75bfe319235b62860d08c                                          0.0s
+        => => naming to registry.fly.io/damvflettextfield:deployment-01HRS0HZ65DFP19AB2DDJ9APH9                                              0.0s
+        --> Building image done
+        ==> Pushing image to fly
+        The push refers to repository [registry.fly.io/damvflettextfield]
+        33d26b4eaad3: Pushed 
+        3b6a513fc8ed: Pushed 
+        04290844c800: Pushed 
+        eaaac683c25a: Pushed 
+        5305019f4685: Pushed 
+        d2968c01735e: Pushed 
+        0c9bfb14c909: Pushed 
+        678cac8b069e: Pushed 
+        d4fc045c9e3a: Pushed 
+        deployment-01HRS0HZ65DFP19AB2DDJ9APH9: digest: sha256:be4426b49ab249e18df56627700c4dd5488fce4280b01141684e7d9df6ead7ae size: 2203
+        --> Pushing image done
+        image: registry.fly.io/damvflettextfield:deployment-01HRS0HZ65DFP19AB2DDJ9APH9
+        image size: 139 MB
+
+        Watch your deployment at https://fly.io/apps/damvflettextfield/monitoring
+
+        Provisioning ips for damvflettextfield
+        Dedicated ipv6: 2a09:8280:1::2d:aab3:0
+        Shared ipv4: 66.241.124.70
+        Add a dedicated ipv4 with: fly ips allocate-v4
+
+        This deployment will:
+        * create 2 "app" machines
+
+        No machines in group app, launching a new machine
+        Creating a second machine to increase service availability
+        Finished launching new machines
+        -------
+        ✔ Machine 3d8d9566b65738 [app] update finished: success
+        -------
+        Checking DNS configuration for damvflettextfield.fly.dev
+
+        Visit your newly deployed app at https://damvflettextfield.fly.dev/
+
+
 check and watch for updates on the fly.io console dashboard (https://fly.io/dashboard)
+
+
+<p align="center">
+    <img src="./gambar-petunjuk/ss_dashboard_damvflettextfield.fly.dev.png" alt="ss_dashboard_damvflettextfield.fly.dev" style="display: block; margin: 0 auto;">
+</p>
 
 ### &#x1F530; check
 
