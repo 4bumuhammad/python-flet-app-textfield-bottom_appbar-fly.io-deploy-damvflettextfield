@@ -267,6 +267,39 @@ check and watch for updates on the fly.io console dashboard (https://fly.io/dash
 
 ### &#x1F530; check
 
+    ❯ flyctl status
+
+        App
+        Name     = damvflettextfield                                        
+        Owner    = personal                                                 
+        Hostname = damvflettextfield.fly.dev                                
+        Image    = damvflettextfield:deployment-01HRS0HZ65DFP19AB2DDJ9APH9  
+
+        Machines
+        PROCESS ID              VERSION REGION  STATE   ROLE    CHECKS                  LAST UPDATED         
+        app     3d8d9566b65738  1       sin     started         1 total, 1 passing      2024-03-12T09:42:02Z
+        app     568346df21598e  1       sin     started         1 total, 1 passing      2024-03-12T09:41:45Z
+
+
+
+    ❯ flyctl ips list
+
+        VERSION IP                      TYPE                    REGION  CREATED AT       
+        v6      2a09:8280:1::2d:aab3:0  public (dedicated)      global  8m24s ago       
+        v4      66.241.124.70           public (shared)                 Jan 1 0001 00:00
+
+        Learn more about Fly.io public, private, shared and dedicated IP addresses in our docs: https://fly.io/docs/reference/services/#ip-addresses
+
+
+
+    ❯ flyctl services list
+
+        Services
+        PROTOCOL        PORTS           HANDLERS        FORCE HTTPS     PROCESS GROUP   REGIONS MACHINES 
+        TCP             80 => 8080      [HTTP]          True            app             sin     2       
+        TCP             443 => 8080     [TLS,HTTP]      False           app             sin     2 
+
+
 ### &#x1F530; open :
 
 ---
