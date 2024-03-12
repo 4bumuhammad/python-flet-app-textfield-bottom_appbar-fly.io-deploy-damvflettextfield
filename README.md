@@ -56,9 +56,51 @@ files structure :
 
 - Dockerfile
 
+        ❯ vim Dockerfile
+
+            FROM python:3-alpine
+
+            WORKDIR /app
+
+            COPY requirements.txt ./
+            RUN pip install --no-cache-dir -r requirements.txt
+
+            COPY . .
+
+            EXPOSE 8080
+
+            CMD ["python", "./main.py"]
+
+
 #### Test application with Docker container
 
+
+    ❯ docker build -t fletapp .
+
+    ❯ docker run -d --name fletapp-avc -p 8080:8080 fletapp
+
+
+
+    # list
+
+    ❯ docker images
+
+        REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
+        fletapp      latest    04b55dd3acb2   7 seconds ago   143MB
+
+
+    ❯ docker ps -a --format "table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Names}}\t{{.Ports}}"
+
+        CONTAINER ID   IMAGE     STATUS         NAMES         PORTS
+        b1f9de1944fb   fletapp   Up 6 seconds   fletapp-avc   0.0.0.0:8080->8080/tcp
+
+
 #### Result :
+
+<p align="center">
+    <img src="./gambar-petunjuk/ss_app_container_1.png" alt="ss_app_container_1" style="display: block; margin: 0 auto;">
+</p>
+
 
 #### Reset containers :
 
