@@ -192,6 +192,8 @@ check and watch for updates on the fly.io console dashboard (https://fly.io/dash
 
 ### &#x1F530; deploy Apps :
 
+    ❯ flyctl deploy
+
 check and watch for updates on the fly.io console dashboard (https://fly.io/dashboard)
 
 ### &#x1F530; check
