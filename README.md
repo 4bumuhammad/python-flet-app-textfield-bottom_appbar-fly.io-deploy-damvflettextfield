@@ -324,3 +324,7 @@ check and watch for updates on the fly.io console dashboard (https://fly.io/dash
 
 
 ### delete apps
+
+<p align="center">
+    <img src="./gambar-petunjuk/ss_delete_damvflettextfield.fly.dev.png" alt="ss_delete_damvflettextfield.fly.dev" style="display: block; margin: 0 auto;">
+</p>
