@@ -178,6 +178,11 @@ files structure :
 
 ### &#x1F530; create Apps :
 
+    ❯ flyctl apps create --name damvflettextfield
+
+        automatically selected personal organization: abumuhammad
+        New app created: damvflettextfield
+
 
 check and watch for updates on the fly.io console dashboard (https://fly.io/dashboard)
 
