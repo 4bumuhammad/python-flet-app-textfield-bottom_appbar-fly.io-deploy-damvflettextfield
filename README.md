@@ -302,6 +302,17 @@ check and watch for updates on the fly.io console dashboard (https://fly.io/dash
 
 ### &#x1F530; open :
 
+    ❯ flyctl open
+
+        Command "open" is deprecated, use `fly apps open` instead
+        opening https://damvflettextfield.fly.dev/ ...
+
+
+<p align="center">
+    <img src="./gambar-petunjuk/ss_app_damvflettextfield.fly.dev.png" alt="ss_app_damvflettextfield.fly.dev" style="display: block; margin: 0 auto;">
+</p>
+
+
 ---
 
 <p align="center">
