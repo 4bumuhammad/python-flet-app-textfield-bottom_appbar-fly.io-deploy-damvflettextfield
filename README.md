@@ -126,7 +126,7 @@ files structure :
 - toml [Tom's Obvious Minimal Language]
 
 
-        ❯ vim abumuhammad.toml
+        ❯ vim fly.toml
 
 
             app = "damvflettextfield"
