@@ -23,6 +23,11 @@ files structure :
 
 ---
 
+<p align="center">
+    <img src="./gambar-petunjuk/fly-io-logo.svg" alt="fly-io-logo" style="display: block; margin: 0 auto;">
+</p>
+
+
 ---
 
 ## Stages in deploying the application to fly.io
@@ -48,9 +53,6 @@ check and watch for updates on the fly.io console dashboard (https://fly.io/dash
 
 ---
 
-<p align="center">
-    <img src="./gambar-petunjuk/well_done.png" alt="well_done" style="display: block; margin: 0 auto;">
-</p>
 
 
 ---
